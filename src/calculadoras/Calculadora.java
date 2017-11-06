@@ -121,7 +121,7 @@ public class Calculadora
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                numero1 = Double.parseDouble(resultField.getText());
+                numero1 = resultField.getText().isEmpty() ? 0 : Double.parseDouble(resultField.getText());
                 limpaDisplay();
                 operacao = "*";
             }
@@ -187,7 +187,7 @@ public class Calculadora
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                numero1 = Double.parseDouble(resultField.getText());
+                numero1 = resultField.getText().isEmpty() ? 0 : Double.parseDouble(resultField.getText());
                 limpaDisplay();
                 operacao = "-";
             }
@@ -245,7 +245,7 @@ public class Calculadora
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                numero1 = Double.parseDouble(resultField.getText());
+                numero1 = resultField.getText().isEmpty() ? 0 : Double.parseDouble(resultField.getText());
                 limpaDisplay();
                 operacao = "+";
             }
@@ -289,7 +289,7 @@ public class Calculadora
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                numero1 = Double.parseDouble(resultField.getText());
+                numero1 = resultField.getText().isEmpty() ? 0 : Double.parseDouble(resultField.getText());
                 limpaDisplay();
                 operacao = "/";
             }
